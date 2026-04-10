@@ -23,3 +23,5 @@ include:
     shield: lily58_left
   - board: mikoto@7.20
     shield: lily58_right
+  - board: mikoto@7.20
+    shield: settings_reset
