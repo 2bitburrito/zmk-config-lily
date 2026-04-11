@@ -39,23 +39,17 @@
         };
 
         meh: meh {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MEH";
-            bindings = <&none>, <&none>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT)>;
+          compatible = "zmk,behavior-mods";
+          #binding-cells = <0>;
+          mods = <(MOD_LCTL | MOD_LSFT | MOD_LALT)>;
         };
 
         meh_plus: meh_plus {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MEH_PLUS";
-            bindings = <&none>, <&none>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_LSFT)>;
+          compatible = "zmk,behavior-mods";
+          #binding-cells = <0>;
+          mods = <(MOD_LCTL | MOD_LALT | MOD_LGUI | MOD_LSFT)>;
         };
-    };
+   };
 
     combos {
         compatible = "zmk,combos";
@@ -100,23 +94,17 @@
             //                     |  <   |  >   |      |        |  |       |      |       |       |
 
             bindings = <
-&trans     &trans     &trans      &trans    &bt BT_CLR  &bt BT_CLR_ALL                    &trans  &kp N7     &kp N8  &kp N9    &trans     &kp BACKSPACE
+&trans     &trans     &trans      &trans    &bt LT  &bt GT                    &trans  &kp N7     &kp N8  &kp N9    &trans     &kp BACKSPACE
 &kp GRAVE  &kp EXCL   &kp AT      &kp LBRC  &kp RBRC    &kp PIPE                          &trans  &kp N4     &kp N5  &kp N6    &kp ASTRK  &trans
 &trans     &kp HASH   &kp DOLLAR  &kp LPAR  &kp RPAR    &kp UNDER                         &trans  &kp N1     &kp N2  &kp N3    &kp MINUS  &kp PLUS
 &kp AMPS   &kp PRCNT  &kp CARET   &kp LBKT  &kp RBKT    &kp TILDE       &trans    &trans  &trans  &kp EQUAL  &kp N0  &kp FSLH  &trans     &trans
-                                  &trans    &kp LT      &kp GT          &to 0     &tog 2  &trans  &trans     &trans
+                                  &trans    &trans      &trans          &to 0     &tog 2  &trans  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         vi_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  !  |  @  |  dwn |  $   |  %   |                   |  <-  |   ^   |   v   |  ->  |       |       |
-            // |       |     |     |      |      |  BCK |        |  |       | BTCLR|   BT1 | BT2   | BT3  |  BT4  |  BT5  | 
-            //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
 &kp F1  &kp F2            &kp F3             &kp F4             &kp F5  &kp F6                          &kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
