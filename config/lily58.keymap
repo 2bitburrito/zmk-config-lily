@@ -43,8 +43,45 @@
         compatible = "zmk,combos";
 
         home_layer {
+            // Thumb combo to jump back to the base layer.
             bindings = <&to 0>;
             key-positions = <53 54>;
+        };
+
+        combo_copy {
+            // A + C = Cmd+C
+            bindings = <&kp LG(C)>;
+            key-positions = <25 39>;
+        };
+
+        combo_paste {
+            // A + V = Cmd+V
+            bindings = <&kp LG(V)>;
+            key-positions = <25 40>;
+        };
+
+        combo_cut {
+            // A + X = Cmd+X
+            bindings = <&kp LG(X)>;
+            key-positions = <25 38>;
+        };
+
+        combo_undo {
+            // W + E = Cmd+Z
+            bindings = <&kp LG(Z)>;
+            key-positions = <14 15>;
+        };
+
+        combo_redo {
+            // W + R = Cmd+Shift+Z
+            bindings = <&kp LG(LS(Z))>;
+            key-positions = <14 16>;
+        };
+
+        combo_select_all {
+            // Z + V = Cmd+A
+            bindings = <&kp LG(A)>;
+            key-positions = <37 40>;
         };
     };
 
