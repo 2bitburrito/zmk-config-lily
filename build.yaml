@@ -19,9 +19,7 @@
 #
 ---
 include:
-  - board: mikoto@7.20
-    shield: lily58_left
-  - board: mikoto@7.20
-    shield: lily58_right
-  - board: mikoto@7.20
-    shield: settings_reset
+  - board: nice_nano_v2
+    shield: lily58_left nice_view_adapter nice_view
+  - board: nice_nano_v2
+    shield: lily58_right nice_view_adapter nice_view
