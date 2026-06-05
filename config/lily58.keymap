@@ -106,11 +106,11 @@
             //                     | MEH+ | MEH  | ENTER/1|  -/1 |  |   2   | SPACE|   3   |       |
 
             bindings = <
-&kp EQUAL  &kp N1               &kp N2           &kp N3        &kp N4                 &kp N5                                                   &kp N6       &kp N7         &kp N8        &kp N9            &kp N0                   &kp BACKSPACE
-&kp TAB    &kp Q                &kp W            &kp E         &kp R                  &kp T                                                    &kp Y        &kp U          &kp I         &kp O             &kp P                    &kp FSLH
-&kp ESC    &hml LEFT_COMMAND A  &hml LEFT_ALT S  &hml LCTRL D  &hml LSHIFT F          &kp G                                                    &kp H        &hmr RSHIFT J  &hmr RCTRL K  &hmr RIGHT_ALT L  &hmr RIGHT_COMMAND SEMI  &kp SQT
-&kp GRAVE  &kp Z                &kp X            &kp C         &kp V                  &kp B                    &kp LBKT           &kp RBKT     &kp N        &kp M          &kp COMMA     &kp DOT           &kp FSLH                 &kp CLCK
-                                                 &trans        &kp LS(LA(LG(LCTRL)))  &mt LS(LA(LCTRL)) ENTER  &lt 1 BACKSPACE    &lt 3 MINUS  &lt 2 SPACE  &trans         &trans
+&kp EQUAL  &kp N1               &kp N2           &kp N3             &kp N4                 &kp N5                                                   &kp N6       &kp N7         &kp N8        &kp N9            &kp N0                   &kp BACKSPACE
+&kp TAB    &kp Q                &kp W            &kp E              &kp R                  &kp T                                                    &kp Y        &kp U          &kp I         &kp O             &kp P                    &kp FSLH
+&kp ESC    &hml LEFT_COMMAND A  &hml LEFT_ALT S  &hml LCTRL D       &hml LSHIFT F          &kp G                                                    &kp H        &hmr RSHIFT J  &hmr RCTRL K  &hmr RIGHT_ALT L  &hmr RIGHT_COMMAND SEMI  &kp SQT
+&kp GRAVE  &kp Z                &kp X            &kp C              &kp V                  &kp B                    &kp LBKT           &kp RBKT     &kp N        &kp M          &kp COMMA     &kp DOT           &kp FSLH                 &kp CLCK
+                                                 &kp LS(LG(SPACE))  &kp LS(LA(LG(LCTRL)))  &mt LS(LA(LCTRL)) ENTER  &lt 1 BACKSPACE    &lt 3 MINUS  &lt 2 SPACE  &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
