@@ -15,7 +15,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <30>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
@@ -28,12 +28,12 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <30>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54 55 56 57 43>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 55 56 57 43 54>;
             hold-trigger-on-release;
         };
     };
