@@ -1,0 +1,21 @@
+config/lily58.keymap
+  s_cd3fcf856788d7::t_de5ccfa6d1e6bb 17,24,30,37
+  s_cd3fcf856788d7::t_85bf1156f1041e 92-97
+  s_cd3fcf856788d7::t_b95184bf0eadfa 98-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "e8c566086c0034cbbd2cd780951dc805c44dae45",
+  "prompts": {},
+  "sessions": {
+    "s_cd3fcf856788d7": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc43920f2ffejA2nPwkDUN3aZd",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    }
+  }
+}
