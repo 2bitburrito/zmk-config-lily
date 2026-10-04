@@ -103,6 +103,11 @@
             bindings = <&kp LC(ENTER)>;
             key-positions = <27 52>;
         };
+
+        spotlight {
+            bindings = <&kp RG(SPACE)>;
+            key-positions = <34 55>;
+        };
     };
 
     behaviors {
@@ -118,6 +123,7 @@
           36 37 38 39 40 41 42   43 44 45 46 47 48 49
                    50 51 52 53   54 55 56 57
         */
+
         default_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |  EQUAL|  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  BSPC |
@@ -127,11 +133,11 @@
             //                     | MEH+ | MEH  | ENTER/1|  -/1 |  |   2   | SPACE|   3   |       |
 
             bindings = <
-&kp EQUAL  &kp N1               &kp N2           &kp N3             &kp N4                 &kp N5                                                    &kp N6       &kp N7         &kp N8         &kp N9            &kp N0                   &kp BACKSPACE
-&kp TAB    &kp Q                &kp W            &kp E              &kp R                  &kp T                                                     &kp Y        &kp U          &kp I          &kp O             &kp P                    &kp BACKSLASH
-&kp ESC    &hml LEFT_COMMAND A  &hml LEFT_ALT S  &hml LCTRL D       &hml LSHIFT F          &kp G                                                     &kp H        &hmr RSHIFT J  &hmr RCTRL K   &hmr RIGHT_ALT L  &hmr RIGHT_COMMAND SEMI  &kp SQT
-&kp GRAVE  &kp Z                &kp X            &kp C              &kp V                  &kp B                    &kp LBKT            &kp RBKT     &kp N        &kp M          &kp COMMA      &kp DOT           &kp FSLH                 &kp CLCK
-                                                 &kp LS(LG(SPACE))  &kp LS(LA(LG(LCTRL)))  &mt LS(LA(LCTRL)) ENTER  &lt 1 UNDERSCORE    &lt 3 MINUS  &lt 2 SPACE  &trans         &kp RS(RG(M))
+&kp EQUAL  &kp N1  &kp N2  &kp N3        &kp N4         &kp N5                                               &kp N6       &kp N7         &kp N8     &kp N9   &kp N0         &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp E         &kp R          &kp T                                                &kp Y        &kp U          &kp I      &kp O    &kp P          &kp BACKSLASH
+&kp ESC    &kp A   &kp S   &kp D         &hml LSHIFT F  &kp G                                                &kp H        &hmr RSHIFT J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp GRAVE  &kp Z   &kp X   &kp C         &kp V          &kp B               &kp LBKT            &kp RBKT     &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH       &kp CLCK
+                           &kp LEFT_ALT  &kp LCTRL      &mt LEFT_GUI ENTER  &lt 1 UNDERSCORE    &lt 3 MINUS  &lt 2 SPACE  &kp RIGHT_GUI  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
